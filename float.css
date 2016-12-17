@@ -1,0 +1,13 @@
+body { background: #e0e0e0; }
+
+#primary {
+  float: left;
+  width: 65%;
+  background: yellow;
+}
+
+#secondary {
+  float: left;
+  width: 25%;
+  background: yellow;
+}

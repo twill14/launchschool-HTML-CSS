@@ -1,0 +1,31 @@
+body { background: #cccccc; }
+
+section{
+    max-width:1200px;
+    margin: 0 auto;
+    background:gray;
+    overflow:hidden;
+}
+
+header{
+    float:left;
+    width:15%;
+    background:yellow;
+}
+
+#section1{
+    float:left;
+     width:70%;
+     background:maroon;
+     padding:0 30px;
+}
+
+#section2{
+    overflow:hidden;
+    background:cyan;
+}
+
+footer{
+    font-size:40px;
+    clear:both;
+}

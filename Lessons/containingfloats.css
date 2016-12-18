@@ -1,0 +1,25 @@
+body { background: #e0e0e0; }
+
+
+#primary, #secondary {
+  padding: 25px;
+  background: yellow;
+  box-sizing: border-box;
+}
+
+#columns {
+   width: 840px;
+  padding: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#primary {
+  float: left;
+  width: 575px;
+}
+
+#secondary {
+  float: right;
+  width: 245px;
+}

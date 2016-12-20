@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Boxes</title>
+        <link rel="stylesheet" href="boxes.css" type="text/css" />
+    </head>
+    <body>
+        <section class="container">
+            <h1 id="title">Inline Elements</h1>
+                <p id="text">Inline elements occupies only the space of the content. It does not take width and height values.</p>
+                <p id="example">Example:</p>
+                <p id="text">Anchor tags are normally inline elements, you see they only take up the width of their content and not the whole width of the page then the next anchor tags follow right after it.</p>
+                <section id="sample"> 
+                    <ul id="firstlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                <p id="fixed">I'm Position Fixed</p>
+                <p id="example">What happens if we set a margin property on an inline level element?</p>
+                <p id="text">Inline elements will only take left and right margin values.</p>
+                 <section id="sample"> 
+                    <ul id="secondlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                <p id="text">In the example I put a margin of 30px on all sides, as you can see if you check the anchor tag in the developer tools only the left and right side of the contents are affected by the margin.</p>
+                <p id="example">What about padding?</p>
+                  <section id="sample"> 
+                    <ul id="thirdlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                <p id="text">Inline elements accept padding values on all sides.</p>
+                 <p id="example">Floating Inline Elements</p>
+                 <section id="sample"> 
+                    <ul id="fourthlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+             <h1 id="title">Block Elements</h1>
+                 <p id="text">Block level elements take up the entire width of the page and always start in a new line.It can have margin/s and padding/s. If no width is set it will expand naturally to fill its parent container. If no height is set, it will expand to fit its content.</p>
+                 <p id="example">Example: (Div elements are naturally block level elements)</p>
+                     <div id="div1">This is a div with no width and height set.</div>
+                     <div id="div2">This a div with no width but with a height of 30px, with a padding and margin of 20px around it.</div>
+                     <div id="div3">This a div with a width of 90px and no height set.</div>
+                 <p id="text">In the first example, the div fills the entire width, and uses just enough height to fill its content. In the second box, we didn't set a width, but it still filled the entire width (counting the padding and margin); it also uses 60px of height plus the margin and padding. For the third box, we set the width to 90px, and as expected, it took just enough height to fill its content. The text was squished because of the reduced width, so the browser expanded the height to accommodate the content.</p>
+                 <p id="example">Floating Block Elements</p>
+                 <p id="example">Floating block elements with no width and height set.</p>
+                     <div id="divright">Box - 1 - Floated Left</div>
+                     <div id="divleft">Box - 2 - Floated Right</div>
+                  <p id="text" style="clear:both">It floated our elements to the left and right on the same block. It shrunk to the widest element within each div, in our case the texts inside, since we didn't set a specific width for each</p>
+                  <p id="example">Floating block elements with width and height set.</p>
+                      <div id="divright2">Box - 1 - Floated Left</div>
+                      <div id="divleft2">Box - 2 - Floated Right</div>
+                  <p id="example" style="clear:both">Can we change an inline element into a block element?</p>
+                  <p id="text">Let's use the anchor tag as an example.</p>
+                   <section> 
+                    <ul id="fifthlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                 <p id="text">Yes, we can change display values from a block element to inline element and vice versa.Display values can be overwritten by another display value.</p>
+            <section class="lastsection">
+            <h1 id="title">Inline-Block Elements</h1>
+                 <p id="text">Inline-block elements are inline elements that can take block elements properties, such as width and height. It acts similarly to a float minus the clear property.</p>
+                 <p id="example">Example: Let's use inline-block to create a navigation.</p>
+                   <section> 
+                    <ul id="sixthlist">
+                        <li>Home</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                        <li>About</li>
+                    </ul>
+                </section>
+                <p id="text">We achieved the same results as to when we float the anchor elements to give them the block elements' properties. It's you get two elements in just one, you get to have the properties of inline elements and at the same time get the properties of block elements.</p>
+                </section>
+                <section>
+                     <h1 id="centertitle">Floats and Positioning Elements</h1>
+                      <h1 id="title">Floats</h1>
+                      <p id="text">A floated element is taken out of the normal flow then shifted left or right.When you float a content it becomes a block-level element.</p>
+                      <p id="example">Example</p>
+                      <div class="divfloat1">Box1</div>
+                      <div class="divfloat2">Box2</div>
+                      <div class="divfloat3">Box3</div>
+                 
+                  <p id="text">Elements following a floated element will wrap around the floated element, we do not want this to happen, so I applied the 'clear: both' property to the third div, there are 2 other properties for clear, that's the left and the right. I chose to clear both, just to be sure.</p>
+                   <p id="text">There are other methods to clear floats, one of these methods is the clearfix method:</p>
+                   <pre>  
+                       <code>     
+                       elementName::after {
+                            content: " ";
+                            display:block;
+                            clear: both;
+                        }</code>
+                    </pre>
+                  <p id="text">Basically, you just put the ::after pseudo-element on the containing parent element of the floated contents.</p>
+                </section>
+                <section>
+                     <h1 id="title">Positioning</h1>
+                     <p id="text">Every now and then we want to position things the way we want it to be and move it around the page, and floats simply cannot do this as it can only take an element to position left or right of the page. This is where positioning comes in. There are four types of positiong:</p>
+                       <ul id="list">
+                        <li>Static</li>
+                        <li>Fixed</li>
+                        <li>Relative</li>
+                        <li>Absolute</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 id="title">Static Position</h1>
+                     <p id="text">The element renders normally on the page - this is the default position of elements on the page.</p>
+                </section>
+                 <section>
+                    <h1 id="title">Fixed Position</h1>
+                     <p id="text">This will allow you to put an element in the same place even when the page is scrolled. Top, Right, Bottom and Left properties are used to position this property.</p>
+                     <p id="text">Fixed positioned elements are taken out of the flow and does not leave a gap in the location of the page where you originally put it.</p>
+                     <p id="text">Notice the blue box on the bottom left side of the page. It is a fixed position element.</p>
+                </section>
+                 <section>
+                    <h1 id="title">Position Relative</h1>
+                     <p id="text">Positioned relative to its normal position. Setting the offset values will cause the element to move away from its normal position according to the values you've set. However, its position in the normal flow of the document will be preserved and following texts will not wrap around it.</p>
+                     <p id="text">When we position an element with offset values it moves on top of the next text/elements rather than pushing it down as to what padding and margin element would do.</p>
+                     <p id="relative">I'm a relatively positioned box!</p>
+                      <p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque repellat sapiente vitae nihil debitis accusamus, odit, tempore id reiciendis consequatur necessitatibus veritatis, distinctio vel, cum repellendus numquam blanditiis perferendis?</p>
+                </section>
+                <section>
+                    <h1 id="title">Position Absolute</h1> 
+                    <div>
+                         <p id="absolute">I'm a absolute positioned box!</p>
+                    </div>
+                   
+                     <p id="text">When the element is positioned absolute it is taken out of the normal flow and the original space of that element in the document will not be preserved.</p>
+                     <p id="text">"Absolutely positioned elements are moved in relation to their closest relatively positioned parent element. Should a relatively positioned parent element not exist, the absolutely positioned element will be positioned in relation to the element."</p>
+                     <p id="text">Let's get some examples:</p>
+                     <p id="text">I will set the position of the section with the class of "pos-absolute" to position: relative so that the absolutely positioned element will be basing its offset values on the whole section element.</p>
+                     <p id="text">Notice the green box beside the Position Absolute title, it is an absolutely positioned element.</p>
+                </section>
+        </section>
+    </body>
+</html>

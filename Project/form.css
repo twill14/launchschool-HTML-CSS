@@ -1,0 +1,56 @@
+.styled_form{
+    font-family: arial;
+    font-size:18px;
+    margin:0 auto;
+    padding:0;
+    border:none;
+    width:600px;
+}
+.styled_form.horizontal label {
+  display: inline-block;
+  padding: 0 20px 0 0;
+  vertical-align: middle;
+}
+.styled_form input[type="text"], input[type="email"], input[type="number"] {
+  display: inline-block;
+  width: 100%;
+  height:25px;
+  padding-left:10px;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  font: normal 14px Helvetica, arial, sans-serif;
+  box-sizing: border-box;
+}
+
+dt{
+    margin-bottom: 4px;
+}
+
+dd{
+    margin:0 0 25px 0;
+}
+
+dl.city {
+  width: 40%;
+}
+dl.state {
+  width: 20%;
+}
+dl.zipcode {
+  width: 30%;
+  padding-right: 0;
+}
+
+#question{
+    font-family: arial;
+    font-size:20px;
+}
+
+.user_input{
+    font-family: arial;
+    font-size:18px;
+    margin:0 auto;
+    padding:0;
+    border:none;
+    width:600px;
+}

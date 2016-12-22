@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="form.css" type="text/css" />
+        <title>Form</title>
+    </head>
+    <body>
+      <form action="" method="get">
+        <div class="styled_form">
+          <dl class="namefield">
+            <dt>
+              <label for="firstname">First Name</label>
+            </dt>
+            <dd>
+              <input type="text" id="firstname" />
+            </dd>
+             <dt>
+              <label for="lastname">Last Name</label>
+            </dt>
+            <dd>
+              <input type="text" id="lastname" />
+            </dd>
+             <dt>
+              <label for="email">Email</label>
+            </dt>
+            <dd>
+              <input type="email" id="email"  placeholder="joeshmo@gmail.com"  inputmode="email"/>
+            </dd>
+              <dt>
+              <label for="address1">Address</label>
+            </dt>
+            <dd>
+              <input type="text" id="address1" />
+              <input type="text" id="address2" />
+            </dd>
+          </dl>
+          <dl class="city partial">
+            <dt>
+              <label for="city">City</label>
+            </dt>
+            <dd>
+              <input type="text" id="city" />
+            </dd>
+          </dl><!--
+          --><dl class="state partial">
+            <dt>
+              <label for="state">State</label>
+            </dt>
+            <dd> 
+                <select name="state" id="state">
+                  <option>AK</option>
+                  <option>AL</option>
+                  <option>AR</option>
+                  <option>AZ</option>
+                  <option>CA</option>
+                  <option>CO</option>
+                  <option>CT</option>
+                  <option>DC</option>
+                  <option>DE</option>
+                  <option>FL</option>
+                  <option>GA</option>
+                  <option>HI</option>
+                  <option>IA</option>
+                  <option>ID</option>
+                  <option>IL</option>
+                  <option>IN</option>
+                  <option>KS</option>
+                  <option>KY</option>
+                  <option>LA</option>
+                  <option>MA</option>
+                  <option>MD</option>
+                  <option>ME</option>
+                  <option>MI</option>
+                  <option>MN</option>
+                  <option>MO</option>
+                  <option>MS</option>
+                  <option>MT</option>
+                  <option>NC</option>
+                  <option>ND</option>
+                  <option>NE</option>
+                  <option>NH</option>
+                  <option>NJ</option>
+                  <option>NM</option>
+                  <option>NV</option>
+                  <option>NY</option>
+                  <option>OH</option>
+                  <option>OK</option>
+                  <option>OR</option>
+                  <option>PA</option>
+                  <option>RI</option>
+                  <option>SC</option>
+                  <option>SD</option>
+                  <option>TN</option>
+                  <option>TX</option>
+                  <option>UT</option>
+                  <option>VA</option>
+                  <option>VT</option>
+                  <option>WA</option>
+                  <option>WI</option>
+                  <option>WV</option>
+                  <option>WY</option>
+                </select>
+            </dd>
+          </dl><!--
+          --><dl class="zipcode partial">
+            <dt>
+              <label for="zipcode">Zip</label>
+            </dt>
+            <dd>
+              <input type="text" id="zipcode" maxlength="5"  inputmode="numeric"/>
+            </dd>
+          </dl>
+      </div>
+      </form>
+      <div class="user_input">
+          <form action="" method="get">
+              <p id="question">Which of these colors do you prefer?</p>
+              <input type="radio" name="color" value="blue" checked="checked"> Blue<br>
+              <input type="radio" name="color" value="red"> Red<br>
+             <input type="radio" name="color" value="green"> Green<br>
+              <input type="radio" name="color" value="orange"> Orange<br>
+              <input type="radio" name="color" value="purple"> Purple<br>
+              <input type="radio" name="color" value="yellow"> Yellow<br>
+              <input type="radio" name="color" value="black"> Black<br>
+              <input type="radio" name="color" value="silver"> Silver
+              
+              <p id="question">Which web technologies did you want to hear about?</p>
+              <input type="checkbox" name="technology" value="HTML"> HTML<br>
+              <input type="checkbox" name="technology" value="CSS"> CSS<br>
+              <input type="checkbox" name="technology" value="Javascript"> Javascript<br>
+              <input type="checkbox" name="technology" value="Ruby"> Ruby<br>
+              <input type="checkbox" name="technology" value="Rails"> Rails<br>
+              <input type="checkbox" name="technology" value="C#"> C#
+              
+              <dl>
+                  <dt><p id="question">Comments</p></dt>
+                  <dd><textarea name="commentbox" rows="4" cols="50"></textarea></dd>
+              </dl>
+              
+               
+               <input type="hidden" name="date" value="date"/>
+               <div>
+                 <input type="submit" name="submit" value="Submit"/>
+                 <input type="reset" name="reset" value="Reset"/>
+               </div>
+          </form>
+      </div>
+    </body>
+</html>

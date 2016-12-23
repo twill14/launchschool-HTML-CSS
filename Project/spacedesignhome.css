@@ -1,0 +1,109 @@
+@import url("whitespace-rest.css");
+
+body{
+    padding-top:135px;
+    font:normal 20px "Avenir", Helvetica, arial, sans-serif;
+    background: #2f2840 url("bg_body.gif") 50% 0 repeat;
+    text-align:center;
+}
+
+header h1 {
+    margin-bottom: 115px;
+}
+
+nav{
+    display:inline-block;
+    font-size:26px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+nav li{
+    display:inline;
+    padding:0 32px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#cacaca;
+}
+
+nav a.active{
+    font-weight:bold;
+    color:#6db9ff;
+}
+
+main{
+    padding-top:130px;
+    height:800px;
+    width:100%;
+    background:#ffffff;
+}
+
+main h1{
+    font-size:36px;
+    padding-bottom: 25px;
+    font-weight:600;
+}
+
+main h1:before,
+main h1:after{
+    display:inline;
+    font-size:36px;
+    padding:0 20px;
+    content:"\2022";
+    vertical-align: middle;
+}
+
+main h2{
+    color:#3e59b2;
+    font-size:24px;
+    font-weight:400;
+}
+
+.column{
+    width:800px;
+    margin:0 auto;
+}
+
+.second_article{
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+footer{
+    padding-top:80px;
+    padding-bottom: 80px;
+   background:#e7e7e7;
+   color:#b2b2b2;
+}
+
+footer p{
+    padding-bottom: 30px;
+}
+
+footer li{
+    display: inline-block;
+    padding:0 62px;
+}
+
+footer li a{
+    display:block;
+    width:46px;
+    height:46px;
+    text-indent: -9999px;
+    overflow:hidden;
+    background:transparent url("icons_social-media.png") 0 0 no-repeat;
+}
+
+footer li a.facebook{
+    background-position: 0 -46px;
+}
+
+footer li a.email{
+    background-position: 0 -92px;
+}
+
+footer li a.instagram{
+    background-position: 0 100%;
+}

@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="advancedform.css" type="text/css" />
     </head>
     <body>
+     <form action="$" method="post">
         <h1 class="formtitle">Create Your Profile</h1>
       <fieldset class="section1">
           <div id="edge"></div>
@@ -75,6 +76,7 @@
                     <input type="text" id="password"/>
                 </dd>
         </dl>
+        
         <dl id="third">
             <dt>
                 <label for="password">Confirm Password</label>
@@ -84,7 +86,28 @@
                 </dd>
             </dl>
       </fieldset>
-      <div class="section4"></div>
-      <div class="section5"></div>
+      <fieldset class="section4">
+           <div id="edge"></div>
+          <h3 class="category">Bio</h3>
+           <dl>
+              <dd>
+                  <textarea id="" rows="6" cols="72"></textarea>
+              </dd>
+            </dl>
+      </fieldset>
+      <fieldset class="section5">
+          <div id="edge"></div>
+          <dl>
+              <dd>
+<input id="cb" type="checkbox">
+<div id="check">
+    I agree to treat other users with respect, 
+    and will not say anything at all if I have nothing nice to say.
+</div>          
+                       </dd>
+            </dl>
+            <input type="submit" value="Create Account">
+      </fieldset>
+     </form>
     </body>
 </html>

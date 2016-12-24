@@ -18,9 +18,36 @@ nav{
     padding-bottom: 15px;
 }
 
+article{
+    padding:0 0 100px 0;
+}
+
+article p{
+    padding: 0 120px;
+}
+
+#team li{
+    display:inline-block;
+    padding:0 30px;
+}
+
+#team li a{
+    text-decoration: none;
+}
+
+#team li img{
+    display:block;
+    margin:0 0 25px 0;
+}
+
+#team ul{
+    padding:0 0 225px 0;
+}
+
 nav li{
     display:inline;
     padding:0 32px;
+    font-size:25px;
 }
 
 nav a{
@@ -35,19 +62,17 @@ nav a.active{
 
 main{
     padding-top:130px;
-    height:800px;
-    width:100%;
     background:#ffffff;
 }
 
-main h1{
+main h2{
     font-size:36px;
     padding-bottom: 25px;
     font-weight:600;
 }
 
-main h1:before,
-main h1:after{
+main h2:before,
+main h2:after{
     display:inline;
     font-size:36px;
     padding:0 20px;
@@ -55,14 +80,14 @@ main h1:after{
     vertical-align: middle;
 }
 
-main h2{
+main h3{
     color:#3e59b2;
     font-size:24px;
     font-weight:400;
 }
 
 .column{
-    width:800px;
+    width:1200px;
     margin:0 auto;
 }
 
@@ -106,4 +131,12 @@ footer li a.email{
 
 footer li a.instagram{
     background-position: 0 100%;
+}
+
+#projects figure{
+    padding:0 0 55px 0;
+}
+
+#projects figure img{
+    display:block;
 }

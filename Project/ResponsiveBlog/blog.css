@@ -1,0 +1,155 @@
+body {
+    font: normal 20px Helvetica, Arial, sans-serif;
+    color: #45494d;
+    background: #ffffff;
+}
+
+main{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+body > header {
+    padding: 130px 0 50px 0;
+    background: #3d3d3d;
+}
+
+header li{
+    list-style:none;
+    display:inline-block;
+    margin-right:50px;
+}
+
+header nav a.active{
+    color:#4a9f8f;
+}
+
+header nav a:hover {
+  color: #f5dc39;
+}
+header nav a{
+    text-decoration: none;
+     color:#ffffff;
+     text-transform: uppercase;
+}
+
+header nav ul{
+    text-align:center;
+}
+
+h1{
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight:400;
+    text-align:center;
+}
+h1 > a{
+    color:white;
+    text-decoration: none;
+    font-size:70px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+span.author{
+     color:#8cd4c6;
+}
+
+
+
+.leftbar{
+    display:block;
+    float:left;
+    width:60%;
+    margin-right:50px;
+    padding-bottom: 80px;
+}
+
+.leftbar article{
+    padding-right:60px;
+    text-justify: inter-word;
+    text-align: justify;
+}
+.leftbar h2{
+    padding-top:30px;
+}
+
+.leftbar h2 a {
+    text-decoration: none;
+    color: #45494d;
+}
+
+.leftbar h2 a:hover{
+    color:#8cd4c6;
+}
+
+.rightbar{
+    float:right;
+    width:30%;
+}
+
+
+.rightbar article{
+     padding-top:60px;
+}
+.rightbar nav a{
+    
+    text-decoration:none;
+    color:#787b80;
+    font-size:15px;
+}
+
+.rightbar nav li a:hover { color: #50c3af; }
+
+.rightbar nav li{
+  list-style-image: url('blt_ul.png');
+}
+
+h3{
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+.rightbar p {
+    font-size:15px;
+    color:#83858a;
+    padding-right:150px;
+}
+
+.prev{
+    background:#83858a;
+}
+
+#button{
+    padding-top:50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 4px 25px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    margin-right:40px;
+}
+
+.next{
+    background:#8cd4c6;
+}
+
+footer {
+  clear:both;
+  max-width: 1000px;
+  padding: 10px 0 20px 0;
+  margin: 0 auto;
+  font: normal 12px Helvetica, Arial, sans-serif;
+  color: #7e8287;
+  border-top: 1px solid #d0d0d0;
+}
